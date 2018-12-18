@@ -1,0 +1,11 @@
+{
+  "name": "@guestbell/slate-plugins-examples",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Kottas",
+  "dependencies": {
+    "create-react-app": "^2.1.1"
+  }
+}
