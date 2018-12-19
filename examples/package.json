@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Peter Kottas",
   "private": true,
+  "homepage": "https://guestbell.github.io/slate-plugins",
   "dependencies": {
     "@guestbell/slate-edit-list": "^0.1.0",
     "bootstrap": "4.1.3",
