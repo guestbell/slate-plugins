@@ -24,6 +24,8 @@ function EditList(
   };
 }
 
+export type EditListPluginInterface = ReturnType<typeof EditList>;
+
 /**
  * User is pressing a key in the editor
  */

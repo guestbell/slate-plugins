@@ -68,11 +68,10 @@ function moveAsSubItem(
 
   newSubList.validate(editor);
 
-  editor.withoutNormalizing(() => {
+  return editor.withoutNormalizing(() => {
     editor.insertNodeByKey(destKey, lastIndex, newSubList);
+    editor.moveNodeByKey(item.key, newSubList.key, 0);
   });
-
-  return editor.moveNodeByKey(item.key, newSubList.key, 0);
 }
 
 export default increaseItemDepth;

@@ -113,7 +113,7 @@ class Example extends React.Component<ExampleProps, ExampleState> {
     // tslint:disable-next-line:no-console
     // tslint:disable-next-line:no-any
     const json = value.toJSON() as any;
-    console.log(json.document.nodes);
+    console.log(json);
     this.setState({
       value,
     });

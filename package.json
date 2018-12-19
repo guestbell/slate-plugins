@@ -13,7 +13,8 @@
     "bootstrap": "lerna bootstrap",
     "postinstall": "npm-run-all bootstrap",
     "clean": "lerna run clean",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",

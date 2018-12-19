@@ -2,88 +2,40 @@
 
 Collection of slate plugins, initially forked from great gitbook repositories. 
 
-> ⚠️ Eversince gitbook abandoned the original version of slate and decided to fork their own, some plugins have been greatly neglected.
+> ⚠️ Ever since gitbook abandoned the original version of slate and decided to fork their own, some plugins have been greatly neglected.
 > This is our attempt to bring these plugins up to date with latest versions of slate.
-> Please note that we will accept pr with new plugins, but we won't accept wishlist containing plugins that we don't use in guestbell.
+> Please note that we will accept pr with new plugins, but we won't accept requests for us updating plugins that we don't use in guestbell.
 > Please note we've rewritten plugins in typescript and also made some changes that might cause api to be inconsistent.
 
 ## Getting Started
 
-Plugins are publish via scope ```@guesbell```, therefore to install, you do
+Plugins are publish via scope ```@guestbell```, therefore to install, you do
 
 ```
 yarn add @guestbell/slate-edit-list
 ```
 
-### Prerequisites
+## Tests
 
-What things you need to install the software and how to install them
+We have temporarily disabled testing on these plugins. In some bright future, we expect to fix them and reenable.
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+## Development
 
 ```
-Give the example
+yarn start
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+We'll be happy to accept PRs from anybody.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/guestbell/slate-plugins/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Peter Kottas** - *Initial work* - [Peter Kottas](https://github.com/PeterKottas)
 
 ## License
 
@@ -91,6 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* It goes without saying most of this work is based on amazing work gitbook guys did.
