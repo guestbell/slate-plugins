@@ -1,6 +1,9 @@
 {
-  "packages": ["examples", "packages/*"],
-  "version": "0.0.0",
+  "packages": [
+    "examples",
+    "packages/*"
+  ],
+  "version": "0.1.0",
   "npmClient": "yarn",
   "npmClientArgs": [
     "--no-lockfile"

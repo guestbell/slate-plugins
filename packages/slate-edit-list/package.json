@@ -1,6 +1,6 @@
 {
   "name": "@guestbell/slate-edit-list",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -17,8 +17,8 @@
     "access": "public"
   },
   "peerDependencies": {
+    "immutable": "^3.0.0",
     "react": "^16.0.0",
-    "slate": "^0.44.9",
-    "immutable": "^3.0.0"
+    "slate": "^0.44.9"
   }
 }
