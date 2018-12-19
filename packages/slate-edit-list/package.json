@@ -15,5 +15,10 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "slate": "^0.44.9",
+    "immutable": "^3.0.0"
   }
 }

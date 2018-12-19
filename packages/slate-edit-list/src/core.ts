@@ -20,9 +20,9 @@ import { Editor } from 'slate';
 
 /**
  * Returns the core of the plugin, limited to the validation and normalization
- * part of `slate-edit-list`, and utils.
+ * part of `@guestbell/slate-edit-list`, and utils.
  *
- * Import this directly: `import EditListCore from 'slate-edit-table/lib/core'`
+ * Import this directly: `import EditListCore from '@guestbell/slate-edit-list/lib/core'`
  * if you don't care about behavior/rendering.
  */
 function core(
