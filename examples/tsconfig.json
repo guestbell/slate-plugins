@@ -1,0 +1,32 @@
+{
+  "extends": "../packages/tsconfig.settings.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "declaration": false,
+    "declarationMap": false,
+    "composite": false
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules",
+    "src/**/__tests__/**/*.*"
+  ],
+  "references": [
+    {
+      "path": "../packages/slate-edit-list"
+    }
+  ]
+}

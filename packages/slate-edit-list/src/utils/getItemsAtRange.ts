@@ -1,0 +1,52 @@
+import { Value, Block, Range, Selection } from 'slate';
+import { List } from 'immutable';
+
+import Options from '../options';
+import isList from './isList';
+import getCurrentItem from './getCurrentItem';
+
+/**
+ * Return the list of items at the given range. The returned items are
+ * the highest list item blocks that cover the range.
+ *
+ * Returns an empty list if no list of items can cover the range
+ */
+const getItemsAtRange = (opts: Options) => (
+  value: Value,
+  range?: Range | Selection
+): List<Block> => {
+  range = range || value.selection;
+
+  if (!range.start.key) {
+    return List();
+  }
+
+  const { document } = value;
+
+  const startBlock = document.getClosestBlock(range.start.key);
+  const endBlock = document.getClosestBlock(range.end.key);
+
+  if (startBlock === endBlock) {
+    const item = getCurrentItem(opts)(value, startBlock);
+    return item ? List([item]) : List();
+  }
+
+  const ancestor = document.getCommonAncestor(
+    startBlock.key,
+    endBlock.key
+  ) as Block;
+
+  if (isList(opts)(ancestor)) {
+    const startPath = ancestor.getPath(startBlock.key);
+    const endPath = ancestor.getPath(endBlock.key);
+
+    return ancestor.nodes.slice(startPath[0], endPath[0] + 1) as List<Block>;
+  } else if (ancestor.type === opts.typeItem) {
+    // The ancestor is the highest list item that covers the range
+    return List([ancestor]);
+  }
+  // No list of items can cover the range
+  return List();
+};
+
+export default getItemsAtRange;

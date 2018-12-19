@@ -1,0 +1,19 @@
+{
+  "name": "@guestbell/slate-edit-list",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "yarn clean && npm-run-all --parallel build:lib",
+    "build:lib": "tsc -p ./tsconfig.json",
+    "build:watch": "npm-run-all --parallel build:lib:watch",
+    "build:lib:watch": "npm run build:lib -- --watch",
+    "clean": "rimraf \"lib/*\""
+  },
+  "author": "Peter Kottas",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

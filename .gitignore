@@ -7,3 +7,4 @@ lib/
 dist/
 examples/build
 .vscode
+packages/*/lib
