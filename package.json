@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=development npm-run-all clean build:lib start:watch",
     "start:watch": "npm-run-all -p build:watch start:examples",
     "start:examples": "cross-env NODE_ENV=development lerna run start --stream",
-    "build": "cross-env NODE_ENV=production lerna run build --stream",
+    "build": "cross-env NODE_ENV=production && yarn clean && lerna run build --stream",
     "build:lib": "cross-env NODE_ENV=production lerna run build --ignore @guestbell/slate-plugins-examples --stream",
     "build:watch": "cross-env NODE_ENV=development lerna run build:watch --parallel",
     "bootstrap": "lerna bootstrap",
@@ -51,6 +51,7 @@
     "slate-react": "^0.21.15",
     "tslint": "^5.12.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "cpx": "1.5.0"
   }
 }

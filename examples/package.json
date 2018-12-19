@@ -13,9 +13,10 @@
   },
   "scripts": {
     "start": "cross-env PORT=3001 react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cpx build/** ../docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rimraf \"../docs\" \"./build\""
   },
   "browserslist": [
     ">0.2%",
