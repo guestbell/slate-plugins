@@ -1,11 +1,15 @@
 # Slate plugins
 
-Collection of slate plugins, initially forked from great gitbook repositories. 
+Collection of slate plugins, initially forked from great gitbook repositories.
 
 > ⚠️ Ever since gitbook abandoned the original version of slate and decided to fork their own, some plugins have been greatly neglected.
 > This is our attempt to bring these plugins up to date with latest versions of slate.
 > Please note that we will accept pr with new plugins, but we won't accept requests for us updating plugins that we don't use in guestbell.
 > Please note we've rewritten plugins in typescript and also made some changes that might cause api to be inconsistent.
+
+## Demo
+
+Check out online [demo](https://guestbell.github.io/slate-plugins/)
 
 ## Getting Started
 
