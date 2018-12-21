@@ -62,11 +62,9 @@ class BasePage extends React.Component<BasePageProps, BasePageState> {
         {this.props.children}
         {this.state.docsMarkdown && (
           <div className={classes.docsContainer}>
-            {this.props.children && (
-              <Typography variant="h2" gutterBottom={true}>
-                Docs
-              </Typography>
-            )}
+            <Typography variant="h2" gutterBottom={true}>
+              Docs
+            </Typography>
             <Markdown className={classes.documentationMarkdown}>
               {this.state.docsMarkdown}
             </Markdown>

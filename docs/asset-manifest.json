@@ -1,16 +1,16 @@
 {
   "main.css": "/slate-plugins/static/css/main.8ae064ab.chunk.css",
-  "main.js": "/slate-plugins/static/js/main.eba9cb83.chunk.js",
-  "main.js.map": "/slate-plugins/static/js/main.eba9cb83.chunk.js.map",
+  "main.js": "/slate-plugins/static/js/main.d4ed141b.chunk.js",
+  "main.js.map": "/slate-plugins/static/js/main.d4ed141b.chunk.js.map",
   "static/css/1.3d0d823d.chunk.css": "/slate-plugins/static/css/1.3d0d823d.chunk.css",
   "static/js/1.e8b98818.chunk.js": "/slate-plugins/static/js/1.e8b98818.chunk.js",
   "static/js/1.e8b98818.chunk.js.map": "/slate-plugins/static/js/1.e8b98818.chunk.js.map",
   "runtime~main.js": "/slate-plugins/static/js/runtime~main.121fb6e3.js",
   "runtime~main.js.map": "/slate-plugins/static/js/runtime~main.121fb6e3.js.map",
   "static/media/index.scss": "/slate-plugins/static/media/fontawesome-webfont.fee66e71.woff",
-  "static/css/main.8ae064ab.chunk.css.map": "/slate-plugins/static/css/main.8ae064ab.chunk.css.map",
   "static/css/1.3d0d823d.chunk.css.map": "/slate-plugins/static/css/1.3d0d823d.chunk.css.map",
+  "static/css/main.8ae064ab.chunk.css.map": "/slate-plugins/static/css/main.8ae064ab.chunk.css.map",
   "index.html": "/slate-plugins/index.html",
-  "precache-manifest.3ef58ffc170317191504c20da8f144c4.js": "/slate-plugins/precache-manifest.3ef58ffc170317191504c20da8f144c4.js",
+  "precache-manifest.ef0454b92ac2c70045118cb346a82913.js": "/slate-plugins/precache-manifest.ef0454b92ac2c70045118cb346a82913.js",
   "service-worker.js": "/slate-plugins/service-worker.js"
 }
