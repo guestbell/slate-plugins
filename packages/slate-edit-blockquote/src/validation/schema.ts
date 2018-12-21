@@ -1,6 +1,7 @@
-import { Block, Editor } from 'slate';
+import { Block, Editor, Node } from 'slate';
 
 import Options from '../options';
+import { List } from 'immutable';
 
 /**
  * Create a schema definition with rules to normalize blockquotes
@@ -37,7 +38,7 @@ function containBlocks(
   // tslint:disable-next-line:no-any
   context: any
 ): Editor {
-  const toWrap: Node[] = context.node.nodes.filter(n => n.object !== 'block');
+  const toWrap: List<Node> = context.node.nodes.filter(n => n.object !== 'block');
 
   if (toWrap.isEmpty()) {
     return undefined;
