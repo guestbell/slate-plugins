@@ -84,14 +84,14 @@ class SlateEditList extends React.Component<ExampleProps, ExampleState> {
           disabled={!inList}
           onClick={() => this.call(decreaseItemDepth)}
         >
-          <IndentIncreaseIcon />
+          <IndentDecreaseIcon />
         </DefaultButton>
 
         <DefaultButton
           disabled={!inList}
           onClick={() => this.call(increaseItemDepth)}
         >
-          <IndentDecreaseIcon />
+          <IndentIncreaseIcon />
         </DefaultButton>
         <DefaultButton onClick={() => this.call(wrapInList)}>Wrap in list</DefaultButton>
         <DefaultButton onClick={() => this.call(unwrapList)}>Unwrap from list</DefaultButton>

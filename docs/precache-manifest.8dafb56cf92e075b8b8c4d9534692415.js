@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "d4ed141b360be2c91d3b",
+    "revision": "a693c2b07ca0e727a143",
     "url": "/slate-plugins/static/css/main.8ae064ab.chunk.css"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "e8b988185694aa85fddf",
-    "url": "/slate-plugins/static/js/1.e8b98818.chunk.js"
+    "revision": "f412864766a13e431f87",
+    "url": "/slate-plugins/static/js/1.f4128647.chunk.js"
   },
   {
     "revision": "121fb6e3145020a961dd",
     "url": "/slate-plugins/static/js/runtime~main.121fb6e3.js"
   },
   {
-    "revision": "d4ed141b360be2c91d3b",
-    "url": "/slate-plugins/static/js/main.d4ed141b.chunk.js"
+    "revision": "a693c2b07ca0e727a143",
+    "url": "/slate-plugins/static/js/main.a693c2b0.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "e8b988185694aa85fddf",
+    "revision": "f412864766a13e431f87",
     "url": "/slate-plugins/static/css/1.3d0d823d.chunk.css"
   },
   {
-    "revision": "7f3cd029d162b61fc89c273731be8a25",
+    "revision": "f69aa2f092fde388f75b763f2b0e7872",
     "url": "/slate-plugins/index.html"
   }
 ];
