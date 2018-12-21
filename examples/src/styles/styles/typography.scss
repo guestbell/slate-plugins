@@ -3,6 +3,11 @@
   margin: 1em 0 0.5em;
 }
 
+.slate-editor pre{
+  padding: 1rem;
+  background-color: #f6f8fa;
+}
+
 .slate-editor p:first-child, .slate-editor h1:first-child, .slate-editor h2:first-child, .slate-editor h3:first-child, .slate-editor h4:first-child, .slate-editor h5:first-child, .slate-editor h6:first-child, .slate-editor blockquote:first-child, .slate-editor pre:first-child {
   margin-top: 0
 }

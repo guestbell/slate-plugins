@@ -22,7 +22,7 @@ const LogoSvg: React.SFC<LogoSvgProps> = props => {
     fill: props.theme.palette.background.paper,
   };
   const rightStyle: React.CSSProperties = {
-    fill: props.theme.palette.secondary.main,
+    fill: props.theme.typography.body1.color,
   };
   const { classes } = props;
   return (

@@ -39,7 +39,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* [**Peter Kottas**](https://github.com/PeterKottas)
+* **Peter Kottas** - *Initial work* - [Peter Kottas](https://github.com/PeterKottas)
 
 ## License
 

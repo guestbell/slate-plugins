@@ -18,7 +18,8 @@
     "react-dom": "^16.6.3",
     "react-pose": "4.0.4",
     "react-router-dom": "4.3.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "markdown-to-jsx": "6.9.0"
   },
   "devDependencies": {
     "@types/classnames": "2.2.6",
@@ -26,11 +27,13 @@
     "@types/react-router-dom": "4.3.1"
   },
   "scripts": {
-    "start": "cross-env PORT=3001 react-scripts start",
-    "build": "react-scripts build && cpx build/** ../docs",
+    "start": "yarn copy:readme:watch && cross-env PORT=3001 && react-scripts start",
+    "build": "yarn copy:readme && react-scripts build && cpx build/** ../docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean": "rimraf \"../docs\" \"./build\""
+    "clean": "rimraf \"../docs\" \"./build\" \"./public/docs\"",
+    "copy:readme": "cpx \"../Readme.md\" ./public/docs && cpx \"../packages/*/Readme.md\" ./public/docs",
+    "copy:readme:watch": "npm run copy:readme"
   },
   "browserslist": [
     ">0.2%",

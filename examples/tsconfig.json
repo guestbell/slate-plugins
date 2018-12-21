@@ -27,6 +27,12 @@
   "references": [
     {
       "path": "../packages/slate-edit-list"
+    },
+    {
+      "path": "../packages/slate-edit-blockquote"
+    },
+    {
+      "path": "../packages/slate-common"
     }
   ]
 }

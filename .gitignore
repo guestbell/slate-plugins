@@ -8,3 +8,4 @@ dist/
 examples/build
 .vscode
 packages/*/lib
+examples/public/docs

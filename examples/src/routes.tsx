@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { Route, Switch, RouteProps, matchPath } from 'react-router-dom';
 import Layout from './components/structure/layout/MainLayout';
@@ -7,13 +6,13 @@ import posed, { PoseGroup } from 'react-pose';
 import PageNotFound from './components/pages/pageNotFound/PageNotFound';
 
 import { HomeRoute } from './components/pages/home/HomeRoute';
-import Home from './components/pages/home/Home';
 
 import { SlateEditListRoute } from './packages/slate-edit-list/SlateEditListRoute';
 import SlateEditList from './packages/slate-edit-list/SlateEditList';
 
 import { SlateEditBlockquoteRoute } from './packages/slate-edit-blockquote/SlateEditBlockquoteRoute';
 import SlateEditBlockquote from './packages/slate-edit-blockquote/SlateEditBlockquote';
+import BasePage from './components/pages/basePage/BasePage';
 
 const RouteContainer = posed.div({
   enter: {
@@ -29,21 +28,30 @@ const RouteContainer = posed.div({
   },
 });
 
+const withBasePage: <T>(
+  packageName: string,
+  Component: React.ComponentType<T>
+) => React.SFC<T> = (packageName, Component) => props => (
+  <BasePage packageName={packageName}>
+    <Component {...props}/>
+  </BasePage>
+);
+
 export const routesConfig: (RouteProps & { className?: string })[] = [
   {
     exact: true,
     path: HomeRoute(),
-    component: Home,
+    component: () => <BasePage packageName="" />,
     className: 'home',
   },
   {
     path: SlateEditListRoute(),
-    component: SlateEditList,
+    component: withBasePage('slate-edit-list', SlateEditList),
     className: 'slate-edit-list',
   },
   {
     path: SlateEditBlockquoteRoute(),
-    component: SlateEditBlockquote,
+    component: withBasePage('slate-edit-blockquote', SlateEditBlockquote),
     className: 'slate-edit-blockquote',
   },
   {
@@ -66,7 +74,10 @@ export const routes = (
       return (
         <Layout className={className}>
           <PoseGroup>
-            <RouteContainer key={location.pathname} className="d-flex flex-column">
+            <RouteContainer
+              key={location.pathname}
+              className="d-flex flex-column"
+            >
               <Switch location={location}>
                 {routesConfig.map((route, index) => (
                   <Route {...route} key={index} />

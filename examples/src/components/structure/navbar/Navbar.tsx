@@ -12,9 +12,11 @@ import {
   List,
   ListItem,
   ListItemIcon,
-  ListItemText
+  ListItemText,
+  Divider
 } from '@material-ui/core';
 import LogoSvg from './LogoSvg';
+import HomeIcon from '@material-ui/icons/Home';
 import ListIcon from '@material-ui/icons/List';
 import BlockIcon from '@material-ui/icons/FormatQuote';
 import { ButtonBaseProps } from '@material-ui/core/ButtonBase';
@@ -22,9 +24,16 @@ import { NavLink, withRouter, RouteComponentProps } from 'react-router-dom';
 import { SlateEditListRoute } from '../../../packages/slate-edit-list/SlateEditListRoute';
 import { SlateEditBlockquoteRoute } from '../../../packages/slate-edit-blockquote/SlateEditBlockquoteRoute';
 import { drawerWidth } from './../../../const/drawer';
+import { HomeRoute } from '../../pages/home/HomeRoute';
+import classNames from 'classnames';
 
-export interface NavbarProps extends WithStyles<typeof styles>, RouteComponentProps {}
+export interface NavbarProps
+  extends WithStyles<typeof styles>,
+    RouteComponentProps {}
 const styles = (theme: Theme) => ({
+  whiteText: {
+    color: 'white',
+  },
   root: {
     flexGrow: 1,
   },
@@ -60,14 +69,16 @@ const Navbar: React.SFC<NavbarProps> = props => {
   const { classes } = props;
   return (
     <>
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
+          <a target="blank" href="https://guestbell.com">
           <LogoSvg />
-          <Typography variant="h6" color="inherit" className={classes.grow}>
+          </a>
+          <Typography variant="h6" className={classNames(classes.grow, classes.whiteText)}>
             Slate plugins
           </Typography>
-          <IconButton color="inherit" component={MyLink}>
-            <Icon className="fa fa-github" />
+          <IconButton component={MyLink}>
+            <Icon className={classNames('fa fa-github', classes.whiteText)} />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -80,6 +91,20 @@ const Navbar: React.SFC<NavbarProps> = props => {
       >
         <div className={classes.toolbar} />
         <List>
+          <ListItem
+            button={true}
+            component={p => (
+              <NavLink to={HomeRoute()} className={p.className}>
+                {p.children}
+              </NavLink>
+            )}
+          >
+            <ListItemIcon>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary="Home" />
+          </ListItem>
+          <Divider/>
           <ListItem
             button={true}
             component={p => (
@@ -112,4 +137,4 @@ const Navbar: React.SFC<NavbarProps> = props => {
   );
 };
 
-export default (withStyles(styles)(withRouter(Navbar)));
+export default withStyles(styles)(withRouter(Navbar));

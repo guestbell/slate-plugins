@@ -28,6 +28,7 @@ const MainLayout: React.SFC<MainLayoutProps> = props => {
     <div className={classNames('main-layout', props.className, classes.root)}>
       <Navbar />
       <main className={classNames(classes.content)}>
+        <div className={classes.toolbar}/>
         {props.children}
       </main>
     </div>
