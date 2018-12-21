@@ -93,8 +93,9 @@ const Navbar: React.SFC<NavbarProps> = props => {
         <List>
           <ListItem
             button={true}
+            color="inherit"
             component={p => (
-              <NavLink to={HomeRoute()} className={p.className}>
+              <NavLink to={HomeRoute()} className={p.className} exact={true}>
                 {p.children}
               </NavLink>
             )}
@@ -107,6 +108,7 @@ const Navbar: React.SFC<NavbarProps> = props => {
           <Divider/>
           <ListItem
             button={true}
+            color="inherit"
             component={p => (
               <NavLink to={SlateEditListRoute()} className={p.className}>
                 {p.children}
@@ -120,6 +122,7 @@ const Navbar: React.SFC<NavbarProps> = props => {
           </ListItem>
           <ListItem
             button={true}
+            color="inherit"
             component={p => (
               <NavLink to={SlateEditBlockquoteRoute()} className={p.className}>
                 {p.children}

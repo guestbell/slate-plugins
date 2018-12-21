@@ -8,6 +8,14 @@
   background-color: #f6f8fa;
 }
 
+.slate-editor :not(pre) > code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 95%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
 .slate-editor p:first-child, .slate-editor h1:first-child, .slate-editor h2:first-child, .slate-editor h3:first-child, .slate-editor h4:first-child, .slate-editor h5:first-child, .slate-editor h6:first-child, .slate-editor blockquote:first-child, .slate-editor pre:first-child {
   margin-top: 0
 }
