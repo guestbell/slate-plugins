@@ -24,7 +24,7 @@ const App: React.SFC<AppProps> = props => {
   return (
     <MuiThemeProvider theme={guestBellTheme}>
       <CssBaseline />
-      <Router>{routes}</Router>
+      <Router basename={process.env.PUBLIC_URL}>{routes}</Router>
     </MuiThemeProvider>
   );
 };
