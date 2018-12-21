@@ -1,29 +1,29 @@
 {
   "name": "@guestbell/slate-plugins-examples",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Peter Kottas",
   "private": true,
   "homepage": "https://guestbell.github.io/slate-plugins",
   "dependencies": {
-    "react-router-dom": "4.3.1",
-    "react-pose": "4.0.4",
+    "@guestbell/slate-common": "^0.3.0",
+    "@guestbell/slate-edit-blockquote": "^0.3.0",
+    "@guestbell/slate-edit-list": "^0.3.0",
     "@material-ui/core": "3.7.0",
     "@material-ui/icons": "3.0.1",
-    "@guestbell/slate-edit-list": "^0.2.0",
-    "@guestbell/slate-edit-blockquote": "^0.2.0",
-    "@guestbell/slate-common": "^0.2.0",
     "bootstrap": "4.1.3",
+    "classnames": "2.2.6",
     "font-awesome": "4.7.0",
+    "node-sass": "4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "classnames": "2.2.6",
-    "node-sass": "4.11.0"
+    "react-pose": "4.0.4",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.1"
   },
   "devDependencies": {
-    "@types/react-router-dom": "4.3.1",
+    "@types/classnames": "2.2.6",
     "@types/react-router": "4.4.3",
-    "@types/classnames": "2.2.6"
+    "@types/react-router-dom": "4.3.1"
   },
   "scripts": {
     "start": "cross-env PORT=3001 react-scripts start",
