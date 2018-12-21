@@ -1,3 +1,5 @@
+import { bindAndScopeChange } from '@guestbell/slate-common/lib/utils/bindAndScopeChange';
+
 import Options, { OptionsFormat } from './options';
 import { schema, normalizeNode } from './validation';
 import {
@@ -47,31 +49,32 @@ function core(
     },
 
     changes: {
-      decreaseItemDepth: bindAndScopeChange(_opts, decreaseItemDepth),
-      increaseItemDepth: bindAndScopeChange(_opts, increaseItemDepth),
-      splitListItem: bindAndScopeChange(_opts, splitListItem),
-      unwrapList: bindAndScopeChange(_opts, unwrapList),
+      decreaseItemDepth: bindAndScopeChange(
+        _opts,
+        bindAndScopeChangeCondition,
+        decreaseItemDepth
+      ),
+      increaseItemDepth: bindAndScopeChange(
+        _opts,
+        bindAndScopeChangeCondition,
+        increaseItemDepth
+      ),
+      splitListItem: bindAndScopeChange(
+        _opts,
+        bindAndScopeChangeCondition,
+        splitListItem
+      ),
+      unwrapList: bindAndScopeChange(
+        _opts,
+        bindAndScopeChangeCondition,
+        unwrapList
+      ),
       wrapInList: wrapInList(_opts),
     },
   };
 }
 
-/**
- * Bind a change to given options, and scope it to act only inside a list
- */
-// tslint:disable-next-line:no-any
-function bindAndScopeChange<U extends any[]>(
-  opts: Options,
-  fn: (_opts: Options, _editor: Editor, ...args: U) => Editor
-): (_editor: Editor, ...args: U) => Editor {
-  return (change: Editor, ...args) => {
-    const { value } = change;
-
-    if (!isSelectionInList(opts)(value)) {
-      return change;
-    }
-    return fn(opts, change, ...args);
-  };
-}
+const bindAndScopeChangeCondition = (opts: Options, editor: Editor) =>
+  isSelectionInList(opts)(editor.value);
 
 export default core;

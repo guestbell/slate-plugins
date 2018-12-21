@@ -1,5 +1,5 @@
 {
-  "name": "@guestbell/slate-edit-list",
+  "name": "@guestbell/slate-edit-blockquote",
   "version": "0.2.0",
   "description": "",
   "main": "./lib/index.js",

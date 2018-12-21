@@ -1,4 +1,5 @@
 import { Editor } from 'slate';
+import { NextType } from '@guestbell/slate-common/lib/types/next';
 
 import Options from '../options';
 import { unwrapList } from '../changes';
@@ -12,7 +13,7 @@ function onBackspace(
   editor: Editor,
   opts: Options,
   // tslint:disable-next-line:no-any
-  next: () => any
+  next: NextType
 ): void | undefined | Editor {
   const { value } = editor;
   const { selection } = value;

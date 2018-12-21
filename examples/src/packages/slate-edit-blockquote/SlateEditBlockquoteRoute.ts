@@ -1,0 +1,1 @@
+export const SlateEditBlockquoteRoute = () => '/slate-edit-blockquote';

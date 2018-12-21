@@ -3,6 +3,7 @@ import { Editor } from 'slate';
 import Options from '../options';
 import { decreaseItemDepth, increaseItemDepth } from '../changes';
 import { getCurrentItem } from '../utils';
+import { NextType } from '@guestbell/slate-common/lib/types/next';
 
 /**
  * User pressed Tab in an editor.
@@ -13,8 +14,7 @@ function onTab(
   event: React.KeyboardEvent,
   editor: Editor,
   opts: Options,
-  // tslint:disable-next-line:no-any
-  next: () => any
+  next: NextType
 ): void | undefined | Editor {
   const { value } = editor;
   const { isCollapsed } = value.selection;

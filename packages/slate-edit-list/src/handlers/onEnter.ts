@@ -1,4 +1,5 @@
 import { Editor } from 'slate';
+import { NextType } from '@guestbell/slate-common/lib/types/next';
 
 import Options from '../options';
 import { unwrapList, splitListItem, decreaseItemDepth } from '../changes';
@@ -15,8 +16,7 @@ function onEnter(
   event: React.KeyboardEvent,
   editor: Editor,
   opts: Options,
-  // tslint:disable-next-line:no-any
-  next: () => any
+  next: NextType
 ): void | undefined | Editor {
   // Pressing Shift+Enter
   // should split block normally
