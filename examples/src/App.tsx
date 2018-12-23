@@ -14,6 +14,9 @@ const guestBellTheme = createMuiTheme({
     secondary: {
       main: '#555555',
     },
+    background: {
+      default: '#eee',
+    },
   },
   typography: {
     useNextVariants: true,

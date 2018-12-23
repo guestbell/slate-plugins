@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "228201bffe11fa627a61",
-    "url": "/slate-plugins/static/css/main.29342238.chunk.css"
+    "revision": "7de62993e2ec4f729c26",
+    "url": "/slate-plugins/static/css/main.6b522ba7.chunk.css"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/js/runtime~main.121fb6e3.js"
   },
   {
-    "revision": "228201bffe11fa627a61",
-    "url": "/slate-plugins/static/js/main.228201bf.chunk.js"
+    "revision": "7de62993e2ec4f729c26",
+    "url": "/slate-plugins/static/js/main.7de62993.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/slate-plugins/static/css/1.3d0d823d.chunk.css"
   },
   {
-    "revision": "ab5be3163c7962e52d2360a66b5cfc78",
+    "revision": "82ee25467b6c491254a9318584ac94f5",
     "url": "/slate-plugins/index.html"
   }
 ];
