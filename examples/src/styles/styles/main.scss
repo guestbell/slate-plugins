@@ -1,4 +1,5 @@
 body {
+  background-color: #eee;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -8,34 +9,6 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-button {
-  cursor: pointer;
-  border: 1px solid #ccc;
-  padding: 6px;
-  border-radius: 2px;
-  margin: 0px;
-  background: white;
-  transition: background 0.3s;
-  outline: none;
-}
-
-button:hover {
-  background: #ccc;
-}
-
-button.active {
-  background: #d9edff;
-}
-
-button.disabled {
-  opacity: 0.4;
-  cursor: auto;
-}
-
-.sep {
-  margin: 15px;
 }
 
 .current-item {
