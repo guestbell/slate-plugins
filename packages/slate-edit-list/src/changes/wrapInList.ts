@@ -1,5 +1,6 @@
 import { Data, Value, Block, Editor } from 'slate';
 import { List } from 'immutable';
+import * as Immutable from 'immutable';
 
 import Options from '../options';
 import { isList } from '../utils';
@@ -60,8 +61,8 @@ function getHighestSelectedBlocks(value: Value): List<Block> {
     startBlock.key,
     endBlock.key
   ) as Block;
-  const startPath = ancestor.getPath(startBlock.key);
-  const endPath = ancestor.getPath(endBlock.key);
+  const startPath = ancestor.getPath(startBlock.key) as Immutable.List<number>;
+  const endPath = ancestor.getPath(endBlock.key) as Immutable.List<number>;
 
   return ancestor.nodes.slice(startPath.get(0), endPath.get(0) + 1) as List<Block>;
 }
