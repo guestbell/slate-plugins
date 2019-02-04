@@ -8,9 +8,9 @@
   "runtime~main.js": "/slate-plugins/static/js/runtime~main.121fb6e3.js",
   "runtime~main.js.map": "/slate-plugins/static/js/runtime~main.121fb6e3.js.map",
   "static/media/index.scss": "/slate-plugins/static/media/fontawesome-webfont.fee66e71.woff",
-  "static/css/main.6b522ba7.chunk.css.map": "/slate-plugins/static/css/main.6b522ba7.chunk.css.map",
   "static/css/1.3d0d823d.chunk.css.map": "/slate-plugins/static/css/1.3d0d823d.chunk.css.map",
+  "static/css/main.6b522ba7.chunk.css.map": "/slate-plugins/static/css/main.6b522ba7.chunk.css.map",
   "index.html": "/slate-plugins/index.html",
-  "precache-manifest.f11c0a22053d213058a74483cb09496d.js": "/slate-plugins/precache-manifest.f11c0a22053d213058a74483cb09496d.js",
+  "precache-manifest.f88766135b1891ebec00160fa4620a9d.js": "/slate-plugins/precache-manifest.f88766135b1891ebec00160fa4620a9d.js",
   "service-worker.js": "/slate-plugins/service-worker.js"
 }
