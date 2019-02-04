@@ -63,7 +63,7 @@ function getHighestSelectedBlocks(value: Value): List<Block> {
   const startPath = ancestor.getPath(startBlock.key);
   const endPath = ancestor.getPath(endBlock.key);
 
-  return ancestor.nodes.slice(startPath[0], endPath[0] + 1) as List<Block>;
+  return ancestor.nodes.slice(startPath.get(0), endPath.get(0) + 1) as List<Block>;
 }
 
 export default wrapInList;
