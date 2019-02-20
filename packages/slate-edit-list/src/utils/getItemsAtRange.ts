@@ -40,7 +40,7 @@ const getItemsAtRange = (opts: Options) => (
     const startPath = ancestor.getPath(startBlock.key);
     const endPath = ancestor.getPath(endBlock.key);
 
-    return ancestor.nodes.slice(startPath[0], endPath[0] + 1) as List<Block>;
+    return ancestor.nodes.slice(startPath.first(), endPath.first() + 1) as List<Block>;
   } else if (ancestor.type === opts.typeItem) {
     // The ancestor is the highest list item that covers the range
     return List([ancestor]);
