@@ -1,6 +1,6 @@
 {
   "name": "@guestbell/slate-edit-blockquote",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "description": "",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -17,7 +17,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@guestbell/slate-common": "^0.3.0"
+    "@guestbell/slate-common": "^0.3.3"
   },
   "peerDependencies": {
     "immutable": "^3.0.0",

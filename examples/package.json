@@ -1,13 +1,13 @@
 {
   "name": "@guestbell/slate-plugins-examples",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": "Peter Kottas",
   "private": true,
   "homepage": "https://guestbell.github.io/slate-plugins",
   "dependencies": {
-    "@guestbell/slate-common": "^0.3.0",
-    "@guestbell/slate-edit-blockquote": "^0.3.1",
-    "@guestbell/slate-edit-list": "^0.3.1",
+    "@guestbell/slate-common": "^0.3.3",
+    "@guestbell/slate-edit-blockquote": "^0.3.3",
+    "@guestbell/slate-edit-list": "^0.3.3",
     "@material-ui/core": "3.7.0",
     "@material-ui/icons": "3.0.1",
     "bootstrap": "4.1.3",
