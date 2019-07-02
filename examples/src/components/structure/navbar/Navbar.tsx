@@ -4,17 +4,14 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Icon from '@material-ui/core/Icon';
-import {
-  withStyles,
-  WithStyles,
-  Drawer,
-  Theme,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Divider
-} from '@material-ui/core';
+import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import LogoSvg from './LogoSvg';
 import HomeIcon from '@material-ui/icons/Home';
 import ListIcon from '@material-ui/icons/List';
@@ -72,9 +69,12 @@ const Navbar: React.SFC<NavbarProps> = props => {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <a target="blank" href="https://guestbell.com">
-          <LogoSvg />
+            <LogoSvg />
           </a>
-          <Typography variant="h6" className={classNames(classes.grow, classes.whiteText)}>
+          <Typography
+            variant="h6"
+            className={classNames(classes.grow, classes.whiteText)}
+          >
             Slate plugins
           </Typography>
           <IconButton component={MyLink}>
@@ -105,7 +105,7 @@ const Navbar: React.SFC<NavbarProps> = props => {
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-          <Divider/>
+          <Divider />
           <ListItem
             button={true}
             color="inherit"

@@ -3,8 +3,8 @@ import ReactMarkdown, {
   MarkdownComponentProps,
   ReactMarkdownProps
 } from 'markdown-to-jsx';
-import { withStyles, WithStyles } from '@material-ui/core/styles';
-import { Theme } from '@material-ui/core';
+import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import Typography from '@material-ui/core/Typography';
 
 const styles = (theme: Theme) => ({

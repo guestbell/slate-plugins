@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { routes } from './routes';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 export interface AppProps {}

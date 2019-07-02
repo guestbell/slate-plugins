@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Markdown from './../../reusables/Markdown';
-import { Theme } from '@material-ui/core';
-import { WithStyles, withStyles } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles';
 import path from 'path';
 import Typography from '@material-ui/core/Typography';
 

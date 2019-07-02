@@ -1,7 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import Navbar from '../navbar/Navbar';
-import { WithStyles, withStyles, Theme } from '@material-ui/core';
+import withStyles, { WithStyles } from '@material-ui/core/styles/withStyles';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import { CSSProperties } from '@material-ui/core/styles/withStyles';
 import { drawerWidth } from './../../../const/drawer';
 
@@ -28,7 +29,7 @@ const MainLayout: React.SFC<MainLayoutProps> = props => {
     <div className={classNames('main-layout', props.className, classes.root)}>
       <Navbar />
       <main className={classNames(classes.content)}>
-        <div className={classes.toolbar}/>
+        <div className={classes.toolbar} />
         {props.children}
       </main>
     </div>
