@@ -31,6 +31,10 @@ Slate plugins is a monorepo maintained using lerna. All standard lerna rules app
 yarn start
 ```
 
+## Created and sponsored by
+
+- [GuestBell](https://guestbell.com/) - Customer centric online POS for Hotels and short terms stays.
+
 ## Contributing
 
 We'll be happy to accept PRs from anybody.
