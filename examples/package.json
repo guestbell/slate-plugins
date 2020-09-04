@@ -14,7 +14,7 @@
     "classnames": "2.2.6",
     "font-awesome": "4.7.0",
     "markdown-to-jsx": "6.9.0",
-    "node-sass": "4.11.0",
+    "node-sass": "4.14.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-pose": "4.0.4",
